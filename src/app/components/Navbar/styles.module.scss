@@ -1,0 +1,26 @@
+.container {
+  li {
+    color: theme("colors.black");
+    cursor: pointer;
+  }
+  .title {
+    color: theme("colors.white");
+  }
+  li:hover {
+    color: theme("colors.red.500");
+    background-color: theme("colors.white");
+
+    .title {
+      color: theme("colors.black");
+    }
+    .menu {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .menu {
+    opacity: 0;
+    visibility: hidden;
+    background-color: theme("colors.white");
+  }
+}
